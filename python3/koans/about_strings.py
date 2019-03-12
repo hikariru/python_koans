@@ -3,6 +3,7 @@
 
 from runner.koan import *
 
+
 class AboutStrings(Koan):
 
     def test_double_quoted_strings_are_strings(self):
@@ -71,8 +72,8 @@ world!
         hi = "Hello, "
         there = "world"
         string = hi + there
-        self.assertEqual(string[0:7], hi)
-        self.assertEqual(string[7:13], there)
+        self.assertEqual("Hello, ", hi)  # 自明すぎて
+        self.assertEqual("world", there)  # 意味がわからない
 
     def test_plus_equals_will_append_to_end_of_string(self):
         hi = "Hello, "
