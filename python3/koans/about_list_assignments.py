@@ -29,7 +29,6 @@ class AboutListAssignments(Koan):
         self.assertEqual(["Willie", "Rae"], first_name)
         self.assertEqual("Johnson", last_name)
 
-    # なんで？
     def test_swapping_with_parallel_assignment(self):
         first_name = "Roy"
         last_name = "Rob"
